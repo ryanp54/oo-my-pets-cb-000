@@ -36,7 +36,7 @@ class Owner
 
   def list_pets
     amounts = self.pets.collect { |k, v| v.size}
-    "I have #{amounts[0]} fish, #{amounts[1]} dog(s), and #{amounts[2]} cat(s)."
+    "I have #{amounts[0]} fish, #{amounts[2]} dog(s), and #{amounts[1]} cat(s)."
   end
 
   def sell_pets
