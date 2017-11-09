@@ -36,6 +36,7 @@ class Owner
 
   def sell_pets
     self.pets.each { |k, v| v.each { |pet| pet.mood = "nervous" }}
+    self.pets = {fishes:[], cats: [], dogs:[]}
   end
 
   def self.all
