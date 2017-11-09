@@ -14,6 +14,10 @@ class Owner
     "I am a #{self.species}."
   end
 
+  def buy_fish(name)
+    self.pets[fishes] << Fish.new(name)
+  end
+
   def sell_pets
     self.pets.each {|k, v| v.each {|pet| pet.mood = "nervous"}}
   end
