@@ -1,3 +1,7 @@
 class Owner
-  # code goes here
+  @@all  # code goes here
+
+  def all
+    @@all
+  end
 end
