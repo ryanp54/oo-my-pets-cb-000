@@ -10,6 +10,10 @@ class Owner
       @@all << self
   end
 
+  def say_species
+    puts "I am a #{self.species}."
+  end
+
   def sell_pets
     self.pets.each {|k, v| v.each {|pet| pet.mood = "nervous"}}
   end
