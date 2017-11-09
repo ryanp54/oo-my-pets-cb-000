@@ -1,5 +1,5 @@
 class Owner
-  @@all 
+  @@all
   attr_accessor :pets, :name, :species
 
   def initialize(name)
@@ -10,7 +10,8 @@ class Owner
   end
 
   def sell_pets
-    
+    self.pets = {fishes:[], cats: [], dogs:[]}
+  end
 
   def self.all
     @@all
