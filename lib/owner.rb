@@ -8,5 +8,5 @@ class Owner
   def self.reset
     @@all.clear
   end
-  
+
 end
