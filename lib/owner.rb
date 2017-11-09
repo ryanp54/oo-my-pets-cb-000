@@ -34,6 +34,10 @@ class Owner
     self.pets[:fishes].each { |pet| pet.mood = "happy" }
   end
 
+  def list_pets
+    self.pets.collect { |k, v| v.size}
+  end
+
   def sell_pets
     self.pets.each { |k, v| v.each { |pet| pet.mood = "nervous" }}
     self.pets = {fishes:[], cats: [], dogs:[]}
