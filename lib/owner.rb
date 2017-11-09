@@ -24,8 +24,12 @@ class Owner
     self.pets[:dogs] << Dog.new(name)
   end
 
+  def walk_dogs
+    self.pets[:dogs] { |pet| pet.mood = "nervous" }
+  end
+
   def sell_pets
-    self.pets.each {|k, v| v.each {|pet| pet.mood = "nervous"}}
+    self.pets.each { |k, v| v.each { |pet| pet.mood = "nervous" }}
   end
 
   def self.all
