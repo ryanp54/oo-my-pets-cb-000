@@ -23,7 +23,7 @@ class Owner
   def buy_dog(name)
     self.pets[:dogs] << Dog.new(name)
   end
-  
+
   def sell_pets
     self.pets.each {|k, v| v.each {|pet| pet.mood = "nervous"}}
   end
